@@ -1,0 +1,104 @@
+.episodes {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  margin-top: -10rem;
+  display: flex;
+  justify-content: center;
+  .episodes-container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 100rem;
+    .episode {
+      flex-basis: calc((100%) / 2 - 2rem);
+      /* margin: 1rem; */
+      /* adjust width of each item by changing the denominator */
+      /*     box-sizing: border-box; */
+      min-height: 20rem;
+
+      /*       background-color: rgba(46, 16, 62, 255); */
+      display: flex;
+      position: relative;
+      border-radius: 15px;
+      background: black;
+      /* background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 19%,
+        rgba(0, 0, 0, 0) 100%
+      ); */
+      .episode-info {
+        padding: 1rem;
+        color: white;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        /* background-color: black; */
+
+        h2 {
+          font-family: "Rubik Vinyl", cursive;
+          position: absolute;
+          margin-top: 1rem;
+          top: 1;
+          left: 1;
+          z-index: 1;
+          font-size: 2em;
+          width: 100%;
+          /* color: rgb(160, 125, 244); */
+          -webkit-background-clip: text;
+          background-clip: text;
+          filter: drop-shadow(0px 0px 0px black);
+          /* Set the text fill color to transparent */
+          -webkit-text-fill-color: transparent;
+
+          /* Add a linear gradient as the background image */
+          background-image: linear-gradient(
+            90deg,
+            rgba(255, 135, 152, 1) 0%,
+            rgba(253, 184, 70, 1) 50%,
+            rgba(160, 125, 244, 1) 100%
+          );
+
+          /* brightness(100);  invert(1) */
+        }
+        p {
+          align-self: center;
+          /*          text-align: justify; */
+          font-size: 1em;
+          margin-left: 1rem;
+          padding: 4.25rem 0;
+        }
+      }
+      .listen {
+        max-width: 15rem;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 1;
+        color: #fec143;
+        display: flex;
+
+        svg {
+          width: 100%;
+          height: auto;
+          padding: 1rem 1rem;
+        }
+      }
+
+      .episode-image {
+        display: block;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 50%;
+        border-radius: inherit;
+        border: solid 1px black;
+      }
+    }
+  }
+}

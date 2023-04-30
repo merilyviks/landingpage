@@ -1,0 +1,21 @@
+.about {
+  background-color: #d8dfe9;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  .left {
+    max-width: 80rem;
+    width: 100%;
+    text-align: center;
+    p {
+      font-size: 1.5em;
+      padding: 1rem;
+    }
+  }
+  .right {
+    max-width: 40rem;
+    width: 100%;
+  }
+}

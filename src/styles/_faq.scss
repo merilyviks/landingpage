@@ -1,0 +1,120 @@
+/* $bg-color: #f6f8fc;
+$primary-text-color: #212943;
+$secondary-text-color: #9772f5;
+$details: #dee4f1; */
+
+.faq-container {
+  margin: 10rem auto;
+  padding: 2rem;
+  max-width: 70rem;
+
+  .heading {
+    color: black;
+    font-size: 5em;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .search {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 13px 0px #dee4f1;
+    /* .svg-container {
+      width: 20%;
+      height: auto;
+      svg {
+        height: 100%;
+        fill: $secondary-text-color;
+        z-index: 1;
+        width: auto;
+        position: relative;
+      }
+    } */
+    .searchbar {
+      font-size: 1rem;
+      font-weight: 400;
+      border: none;
+      padding: 1rem;
+      padding-left: 4rem;
+      width: 100%;
+      border-radius: 0.8rem;
+    }
+    .searchbar:focus {
+      outline: none;
+      box-shadow: 0 0 0 1.5px #dee4f1, 0px 5px 13px 0px #dee4f1;
+    }
+  }
+
+  .faq {
+    margin: 3rem 0;
+    width: 100%;
+    .question-wrapper {
+      border-bottom: 1px solid #dee4f1;
+      margin: 0 auto;
+      padding: 1rem;
+      transition: 1s;
+
+      .question {
+        display: flex;
+        font-size: 2em;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          svg {
+            width: 1rem;
+            height: 1.5rem;
+            fill: #9772f5;
+          }
+
+          svg.active {
+            transform: rotate(180deg);
+          }
+
+          svg:hover {
+            opacity: 0.8;
+          }
+        }
+
+        button:focus {
+          outline: none;
+        }
+      }
+
+      .answer {
+        display: none;
+      }
+
+      .answer.active {
+        display: block;
+        text-align: left;
+        padding-top: 1.5rem;
+        font-size: 2em;
+        height: 0%;
+        animation: slidein 0.4s;
+        animation-fill-mode: forwards;
+        color: rgb(80 80 80);
+      }
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      opacity: 0.3;
+      transform: translateY(-20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+}

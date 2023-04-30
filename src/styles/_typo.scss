@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+.title {
+  font-family: "Rubik Vinyl", cursive;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Zeyada", cursive;
+  line-height: 1;
+  word-break: normal;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+p,
+a,
+h4 {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  word-break: normal;
+}
+
+.faq-container {
+  p,
+  a,
+  h2,
+  h3,
+  .answer,
+  .searchbar,
+  h4 {
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    word-break: normal;
+  }
+}
+
+.contact-from-container,
+textarea,
+input {
+  font-family: "Quicksand", sans-serif;
+}
