@@ -22,14 +22,14 @@ export default function Episodes() {
       name: "hea une saladus",
       url: "/guest3.jpg",
       description:
-        "Mis vahet on klahuhiuhuihssikalisel ettevõtlusel ja startup-il. Ettevõtte perspektiivist on rääkimas täna Mari Tamm ja startupist Laura Põldmaa. Kumba oleks lihtsam alustada?",
+        "Uneta me ei saa, kuid kas magamine on nii keeruline kui tundub. Kas tead, kuidas head unekvaliteeti tagada?",
     },
     {
       id: 4,
       name: "kas Ameerikas on päriselt hea elada?",
       url: "/guest4.jpg",
       description:
-        "Mis vahet on klassikalisel ettevõtlusel ja startup-il. Ettevõtte perspektiivist on rääkimas täna Mari Tamm ja startupist Laura Põldmaa. Kumba oleks lihtsam alustada?",
+        "Külas on meil Ameerikalne, kellega arutame plussidest ja miinustest välismaal. Kas pärastel ka käivad lapsed kuulikindla seljakotiga koolis?",
     },
   ];
   return (
